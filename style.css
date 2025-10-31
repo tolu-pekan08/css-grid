@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background: #333;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header .nav  {
+    display: flex;
+    gap: 15px;
+}
+
+.header .nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex:11 200px;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.footer {
+    grid-area: footer;
+    background:#333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: gold;
+}
